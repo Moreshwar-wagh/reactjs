@@ -26,7 +26,7 @@ export default function Notes({ element, notes, setNotes, seteditId }) {
                 <div className="card-body" style={{ textTransform: "capitalize" }}>
                     <h5 className="card-title">{element.title}</h5>
                     <p className="card-text">{element.desc}</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         onClick={() => { editHandler(element.id) }}>
                         Edit
                     </button>
