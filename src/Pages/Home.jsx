@@ -35,9 +35,13 @@ export const Home = () => {
       <SearchBox onSearch={handleSearch} />
       {filteredData.map((celebrity, index) => {
         return (
-          <div className="rounded border border-2 mx-auto d-flex my-2" style={{
-            maxWidth: "60%",
-          }} key={index}>
+          <div
+            className="rounded border border-2 mx-auto d-flex my-2"
+            style={{
+              maxWidth: "60%",
+            }}
+            key={index}
+          >
             <Accordian
               id={celebrity.id}
               isOpen={celebrity.id === openAccordianID}

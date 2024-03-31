@@ -17,8 +17,8 @@ export const Accordian = ({
   setEditAccordianDataID,
 }) => {
   const accordianID = `accordion ${first}`;
-  const { jsonData } = useContext(CelebritiesContext);
-  const [updateJSONData, setUpdateJSONData] = useState({});
+  const { jsonData, updateJSONData } = useContext(CelebritiesContext);
+  // const [updateJSONData, setUpdateJSONData] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editMode, setEditMode] = useState(false);
   const [editedFirst, setEditedFirst] = useState(first);
@@ -389,11 +389,7 @@ export const Accordian = ({
                   onClick={(e) => handleEdit(e)}
                 >
                   {editMode ? (
-                    <button
-                      className="btn btn-primary"
-                    >
-                      Update
-                    </button>
+                    <button className="btn btn-primary">Update</button>
                   ) : (
                     <button
                       className="btn btn-success"
